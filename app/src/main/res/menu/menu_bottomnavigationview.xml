@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_bottom"
+        android:icon="@drawable/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/internet_bottom"
+        android:icon="@drawable/internet"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/community_bottom"
+        android:icon="@drawable/community"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mypage_bottom"
+        android:icon="@drawable/mypagesoldier"
+        app:showAsAction="always"/>
+</menu>

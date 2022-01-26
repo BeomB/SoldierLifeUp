@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99c7a8"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="병사할인 안내"
+                android:textColor="#4D4D33"
+                android:textSize="30dp"
+                android:fontFamily="@font/euljiro"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="170dp"
+            android:layout_height="2.5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:background="#00000000" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/army_nachim"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2.5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:background="#4D4D33" />
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tLocaltxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:text="지역"
+                            android:textStyle="bold"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tLocal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tFacilitytxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="시설명"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tFacility"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/teventNametxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="할인행사명"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/teventName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tDetailtxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="상세설명"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tHomepagetxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="홈페이지"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tHomepage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:linksClickable="true"
+                            android:autoLink="web"
+                            android:textStyle="bold"
+                            android:textColorLink="#7B0020EE"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tTeltxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="연락처"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tTel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:clickable="true"
+                            android:autoLink="phone"
+                            android:textStyle="bold"
+                            android:textColorLink="#786200EE"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tstartDatetxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="시작일"
+                            android:textAlignment="center"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tstartDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_shape_dictionary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tendDatetxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:fontFamily="@font/nanum"
+                            android:textStyle="bold"
+                            android:text="종료일"
+                            android:textAlignment="center"
+                            android:textColor="#415438"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#80415438" />
+
+                        <TextView
+                            android:id="@+id/tendDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

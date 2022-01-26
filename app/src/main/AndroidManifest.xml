@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soldier.soldierlifeup">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android:permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/myTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCdCCYvdZm2qhi_t2txunEUI9HOJhjRLx0" />
+        <activity android:name="com.soldier.soldierlifeup.SplashActivity"
+            android:label="솔져라이프업">
+<!--            android:theme="@style/SplashTheme">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!--로그인-->
+        <activity android:name=".LoginActivity"/>
+        <!--로그인-->
+
+        <!--군 용어사전-->
+        <activity android:name="com.soldier.soldierlifeup.ArmyDictionary"/>
+        <activity android:name="com.soldier.soldierlifeup.ArmyDictionaryInformation"/>
+        <activity android:name="com.soldier.soldierlifeup.MapsLibraryActivity"/>
+        <!--군 용어사전-->
+
+        <!--군 복지시설-->
+        <activity android:name="com.soldier.soldierlifeup.ArmyService"/>
+        <activity android:name="com.soldier.soldierlifeup.ArmyServiceInformation"/>
+        <!--군 복지시설-->
+
+        <!--병사할인-->
+        <activity android:name="com.soldier.soldierlifeup.ArmySale"/>
+        <activity android:name="com.soldier.soldierlifeup.ArmySaleInformation"/>
+        <!--병사할인-->
+
+        <!--TMO-->
+        <activity android:name="com.soldier.soldierlifeup.ArmyTmo"/>
+        <activity android:name="com.soldier.soldierlifeup.ArmyTmoInformation"/>
+        <!--TMO-->
+
+        <!--회원가입-->
+        <activity android:name=".JoinActivity"/>
+        <!--회원가입-->
+
+        <!--아이디/비번 찾기-->
+        <activity android:name="com.soldier.soldierlifeup.IDPWSearchActivity"/>
+        <!--아이디/비번 찾기-->
+
+        <!--아이디 찾기-->
+        <activity android:name="com.soldier.soldierlifeup.IDSearchActivity"/>
+        <!--아이디 찾기-->
+
+        <!--비번 찾기-->
+        <activity android:name="com.soldier.soldierlifeup.PWSearchActivity"/>
+        <!--비번 찾기-->
+
+        <!--인터넷-->
+        <activity android:name="com.soldier.soldierlifeup.Internet_TV"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_news"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_blog"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_CountryDefense"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_Navy"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_AirForce"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_Army"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_Announcement"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_Marin"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_CountryDefenseNews"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_ArmyNews"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_NavyMarineNews"/>
+        <activity android:name="com.soldier.soldierlifeup.Internet_AirForceNews"/>
+
+    </application>
+
+</manifest>

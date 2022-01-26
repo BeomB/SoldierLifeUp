@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soldier_splash3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/shot1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:tint="#c0c0c0"
+        android:src="@drawable/shot"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Slogan"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/bangers_regular"
+            android:text="SOLDIER LIFEUP"
+            android:textColor="#5e563f"
+            android:textSize="60dp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="#5e563f" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:background="#5e563f" />
+
+
+    <ImageView
+        android:id="@+id/shot3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:tint="#c0c0c0"
+        android:src="@drawable/shot"/>
+
+    <ImageView
+        android:id="@+id/shot2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginBottom="50dp"
+        android:tint="#c0c0c0"
+        android:src="@drawable/shot"/>
+
+
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="300dp"-->
+    <!--            android:src="@drawable/mypage"-->
+    <!--            android:layout_gravity="center"/>-->
+
+    <!--    </LinearLayout>-->
+
+
+
+
+</LinearLayout>
+

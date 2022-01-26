@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "800092534893",
+    "firebase_url": "https://soldierlifeup-2c693.firebaseio.com",
+    "project_id": "soldierlifeup-2c693",
+    "storage_bucket": "soldierlifeup-2c693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800092534893:android:bbcb83c40c04f57fdd6764",
+        "android_client_info": {
+          "package_name": "com.soldier.soldierlifeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800092534893-ta1aaeiktpofqegdlv03t023iq46kpni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt7G2QD_Tlxhuo2Yb1WKeiqfiYU_oTKZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800092534893-ta1aaeiktpofqegdlv03t023iq46kpni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

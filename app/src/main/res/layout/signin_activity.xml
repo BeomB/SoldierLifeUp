@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99c7a8"
+    android:orientation="vertical"
+    tools:context=".JoinActivity"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/list_shape_dictionary">
+
+        <TextView
+            android:id="@+id/maintitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/euljiro"
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textColor="#454545"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/list_shape_dictionary"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/register_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line_shape_signin"
+                    android:paddingStart="20dp"
+                    android:completionThreshold="1"
+                    android:hint="ID를 입력하세요."
+                    android:textColorHint="#a0a0a0" />
+
+
+                <EditText
+                    android:id="@+id/register_et_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/line_shape_signin"
+                    android:completionThreshold="1"
+                    android:paddingStart="20dp"
+                    android:hint="비밀번호를 입력하세요."
+                    android:inputType="textPassword"
+                    android:textColorHint="#a0a0a0" />
+
+
+                <EditText
+                    android:id="@+id/register_et_pwcheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line_shape_signin"
+                    android:completionThreshold="1"
+                    android:paddingStart="20dp"
+                    android:hint="비밀번호를 다시 입력하세요."
+                    android:inputType="textPassword"
+                    android:textColorHint="#a0a0a0" />
+
+                <EditText
+                    android:id="@+id/register_et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/line_shape_signin"
+                    android:completionThreshold="1"
+                    android:paddingStart="20dp"
+                    android:hint="이름을 입력하세요."
+                    android:textColorHint="#a0a0a0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/army_Field"
+                        android:layout_marginTop="10dp"
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/line_shape_signin"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/register_et_armynum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/line_shape_signin"
+                    android:completionThreshold="1"
+                    android:paddingStart="20dp"
+                    android:hint="군번을 입력하세요. ('-' 포함)"
+                    android:textColorHint="#a0a0a0" />
+
+                <EditText
+                    android:id="@+id/register_et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/line_shape_signin"
+                    android:completionThreshold="1"
+                    android:paddingStart="20dp"
+                    android:hint="나이를 입력하세요."
+                    android:textColorHint="#a0a0a0" />
+
+                <EditText
+                    android:id="@+id/register_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line_shape_signin"
+                    android:completionThreshold="1"
+                    android:paddingStart="20dp"
+                    android:hint="핸드폰 번호를 입력하세요 ('-' 제외)"
+                    android:textColorHint="#a0a0a0" />
+
+                <Button
+                    android:id="@+id/btn_enlistment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="입영 일자 설정"
+                    android:textSize="15dp"
+                    android:onClick="OnClickHandler_enlistment"
+                    android:textColor="#454545"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/signin_btn"/>
+                <TextView
+                    android:id="@+id/txt_enlistment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btn_discharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="전역 일자 설정"
+                    android:textSize="15dp"
+                    android:onClick="OnClickHandler_discharge"
+                    android:textColor="#454545"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/signin_btn"/>
+                <TextView
+                    android:id="@+id/txt_discharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:background="@drawable/signin_btn"
+        android:text="회원가입 완료"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ebe8e8"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#00000000"
+            android:text="로그인 화면으로 >"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#454545"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
